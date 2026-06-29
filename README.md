@@ -1,23 +1,45 @@
+<!-- Google AI Studio Banner -->
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+  <img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# Run and deploy your AI Studio app
+<br>
 
-This contains everything you need to run your app locally.
+<!-- Project Header -->
+<div align="center">
+  <h1>🚀 StepAhead</h1>
+  <h2>AI-Powered Smart Task Prioritization & Deadline Rescue Agent</h2>
+  <p>
+    <strong>Think Ahead. Stay Ahead. Beat Deadlines.</strong>
+  </p>
+</div>
 
-View your app in AI Studio: https://ai.studio/apps/35407ee4-dc3a-4237-b61e-5749334ca608
+---
 
-## Run Locally
+<!-- Quick Stats -->
+<div align="center">
 
-**Prerequisites:**  Node.js
+⭐ **AI Productivity Platform** &nbsp;|&nbsp; 🤖 **Google Gemini AI** &nbsp;|&nbsp; ⚡ **React + TypeScript** &nbsp;|&nbsp; 🚀 **Google AI Studio** &nbsp;|&nbsp; 🏆 **Hackathon Project**
 
+</div>
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+<!-- Badges -->
+<p align="center">
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Gemini](https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Google AI Studio](https://img.shields.io/badge/Google-AI_Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+</p>
+
+---
 ---
 
 # 🏗 System Architecture
