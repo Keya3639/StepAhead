@@ -24,9 +24,7 @@ View your app in AI Studio: https://ai.studio/apps/35407ee4-dc3a-4237-b61e-57493
 
 The architecture of **StepAhead** follows a modular full-stack design where the React frontend communicates with an Express backend, which securely interacts with **Google Gemini AI**. If Gemini becomes unavailable, a local heuristic engine automatically takes over to ensure uninterrupted functionality.
 
-## 🏗 System Architecture
 
-## 🏗 System Architecture
 
 ```mermaid
 flowchart TB
