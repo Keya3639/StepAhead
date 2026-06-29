@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-50: #f0f7ff;
+  --color-brand-100: #e0effe;
+  --color-brand-500: #0284c7;
+  --color-brand-600: #0369a1;
+  --color-brand-700: #075985;
+}
+
+body {
+  background-color: #0A0B10;
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* --- LIGHT MODE CASCADING SYSTEM OVERRIDES --- */
+
+.light body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Light sidebar */
+.light aside {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+.light aside button {
+  color: #475569 !important;
+}
+
+.light aside button:hover {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+.light aside .bg-white\/10 {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #7c3aed !important;
+}
+
+/* Light header */
+.light header {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+.light header .text-white {
+  color: #0f172a !important;
+}
+
+/* Light cards and containers */
+.light .bg-white\/5 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+.light .border-white\/10 {
+  border-color: #cbd5e1 !important;
+}
+
+.light .border-white\/20 {
+  border-color: #94a3b8 !important;
+}
+
+/* Light text */
+.light .text-white {
+  color: #0f172a !important;
+}
+
+.light .text-slate-100,
+.light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+.light .text-zinc-400 {
+  color: #4b5563 !important;
+}
+
+.light .text-zinc-300 {
+  color: #374151 !important;
+}
+
+/* Spotlight and brand custom purple elements override in light mode */
+.stepahead-purple-card {
+  background: linear-gradient(to bottom right, #1a0f30, #0c0e17, #06070a) !important;
+  border-color: rgba(139, 92, 246, 0.25) !important;
+}
+
+.stepahead-purple-card-transparent {
+  background: linear-gradient(to bottom right, #1a0f30, rgba(12, 14, 23, 0.4)) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+.stepahead-purple-badge {
+  background-color: #1a0f30 !important;
+  border-color: rgba(139, 92, 246, 0.25) !important;
+}
+
+.stepahead-chat-user {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+  border-color: #6d28d9 !important;
+}
+
+.stepahead-chat-coach {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.light .stepahead-purple-card {
+  background: linear-gradient(to bottom right, #f5f3ff, #faf5ff, #ffffff) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .stepahead-purple-card-transparent {
+  background: linear-gradient(to bottom right, #f5f3ff, rgba(255, 255, 255, 0.9)) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .stepahead-purple-badge {
+  background-color: #f5f3ff !important;
+  border-color: #ddd6fe !important;
+}
+
+.light .stepahead-chat-user {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+  border-color: #6d28d9 !important;
+}
+
+.light .stepahead-chat-coach {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-gradient-to-br.from-\[\#1a0f30\],
+.light .bg-gradient-to-br.from-\[\#160D0A\] {
+  background-image: linear-gradient(to bottom right, #f5f3ff, #faf5ff, #ffffff) !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-\[\#1a0f30\],
+.light .bg-\[\#160D0A\] {
+  background-color: #faf5ff !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .text-violet-300 {
+  color: #8b5cf6 !important;
+}
+
+.light .text-violet-400 {
+  color: #7c3aed !important;
+}
+
+.light .text-violet-500 {
+  color: #6d28d9 !important;
+}
+
+.light .text-violet-600 {
+  color: #5b21b6 !important;
+}
+
+.light .text-violet-700 {
+  color: #4c1d95 !important;
+}
+
+.light .text-emerald-400 {
+  color: #059669 !important;
+}
+
+.light .text-amber-400 {
+  color: #d97706 !important;
+}
+
+.light .text-red-400 {
+  color: #dc2626 !important;
+}
+
+/* Forms & Inputs styling inside light mode */
+.light input,
+.light textarea,
+.light select {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.light input:focus,
+.light textarea:focus,
+.light select:focus {
+  border-color: #7c3aed !important;
+  outline: none !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Scrollbars overrides in light mode */
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Popups and absolute dialogs */
+.light .bg-\[\#0A0B10\],
+.light .bg-\[\#0c0e17\] {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Fix binaural wave audio synth card background in light mode */
+.light .bg-black\/40 {
+  background-color: #f8fafc !important;
+}
+.light .bg-black\/30 {
+  background-color: #f1f5f9 !important;
+}
+.light .bg-black\/20 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Custom scrollbar styling for slick lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
